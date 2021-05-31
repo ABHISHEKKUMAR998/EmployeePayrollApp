@@ -16,6 +16,13 @@
         border: 0px solid green;
     }
     
+    error-output {
+        font-size: 12px;
+        font-style: italic;
+        color: red;
+        margin-left: 5px;
+    }
+    
     .logo-content {
         display: flex;
         flex-direction: row;
