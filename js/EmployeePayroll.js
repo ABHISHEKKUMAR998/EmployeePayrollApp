@@ -60,16 +60,16 @@ class EmployeePayroll {
             throw "Invalid date";
         }
     }
-
-    get notes() {
-        return this._notes;
+    get note() {
+        return this._note;
     }
 
-    set notes(notes) {
-        this._notes = notes;
+
+    set note(note) {
+        this._note = note;
     }
 
     toString() {
-        return "id = " + this.id + ", name = " + this.name + ", gender = " + this.gender + ", profile picture = " + this.picture + ", department = " + this.department + ", salary = " + this.salary + ", startDate = " + this.startDate + ", note = " + this.notes;
+        return "Id: " + this.id + "\nName: " + this.name + "\nPicture: " + this.picture + "\nGender: " + this.gender + "\nDepartment: " + this.department + "\nSalary: " + this.salary + "\nStart date: " + this.startDate + "\nNote: " + this.note;
     }
 }
