@@ -24,7 +24,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 const saveForm = () => {
     try {
-        let EmployeeData = createEmployeePayroll();
+        let employeePayroll = createEmployeePayroll();
+        createAndUpdateStorage(employeePayroll);
     } catch (e) {
         return
     }
@@ -67,6 +68,18 @@ const getInputElementValue = (id) => {
     let value = document.getElementById(id).value;
     return value;
 }
+
+function createAndUpdateStorage(employeePayroll) {
+    let employeePayrollList = JSON.parse(localStorage.getItem("EmployeePayrollList"));
+    if (employeePayrollList != undefined) {
+        employeePayrollList.push(employeePayroll);
+    } else {
+        employeePayrollList = [employeePayroll];
+    }
+    alert(employeePayrollList.toString());
+    localStorage.setItem("EmployeePayrollList", JSON.stringify(employeePayrollList));
+}
+
 
 function resetForm() {
     document.getElementById("empForm").reset();
