@@ -107,6 +107,18 @@
       "_notes": "",
       "_profileUrl": "../assets/profile-images/Ellipse -4.png",
       "id": 1604589731066
+    },
+    {
+      "_name": "Rani Singh",
+      "_gender": "female",
+      "_department": [
+        "HR"
+      ],
+      "_salary": "30000",
+      "_startDate": "1 Jan 2020",
+      "_notes": "",
+      "_profileUrl": "../assets/profile-images/Ellipse -4.png",
+      "id": 1604589731067
     }
   ]
 }

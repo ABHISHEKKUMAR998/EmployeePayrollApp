@@ -23,13 +23,13 @@
 </head>
 
 <body>
-    <h1>Serices Result</h1>
+    <h1>Services Result</h1>
     <div id="get_services"></div>
     <div id="delete_services"></div>
     <div id="post_services"></div>
     <script>
         const getElem = document.querySelector('#get_services');
-        const getURL = "http://127.0.0.1:3000/employee/1";
+        const getURL = " http://localhost:3000/employee/2";
         makePromiseCall("GET", getURL, true).then(responseText => {
                 getElem.textContent = "Get Employee Data: " + responseText;
             })

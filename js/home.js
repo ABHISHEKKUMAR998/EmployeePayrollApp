@@ -46,14 +46,14 @@ const getDeptHtml = (deptList) => {
     return deptHtml;
 };
 
-const remove = (node) => {
-    let employeeData = employeePayrollList.find(empData => empData._name == node.id);
-    if (!employeeData) return;
-    const index = employeePayrollList.map(empData => empData._name).indexOf(employeeData._name);
-    employeePayrollList.splice(index, 1);
-    localStorage.setItem("EmployeeList", JSON.stringify(employeePayrollList));
-    createInnerHtml();
-}
+// const remove = (node) => {
+//     let employeeData = employeePayrollList.find(empData => empData._name == node.id);
+//     if (!employeeData) return;
+//     const index = employeePayrollList.map(empData => empData._name).indexOf(employeeData._name);
+//     employeePayrollList.splice(index, 1);
+//     localStorage.setItem("EmployeeList", JSON.stringify(employeePayrollList));
+//     createInnerHtml();
+// }
 
 const update = (node) => {
     let employee = employeePayrollList.find((emp) => emp._name == node.id);
